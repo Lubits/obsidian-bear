@@ -1,0 +1,159 @@
+.theme-light {
+  /*----------------------------------------------------------------
+  COLORS
+  ----------------------------------------------------------------*/
+
+  --base-h: 212; /* Base hue */
+  --base-s: 15%; /* Base saturation */
+  --base-d: 13%; /* Base lightness Dark Mode  - 0 is black */
+  --base-l: 97%; /* Base lightness Light Mode  - 100 is white */
+  --accent-h: 359; /* Accent hue */
+  --accent-s: 75%; /* Accent saturation */
+  --accent-d: 70%; /* Accent lightness Dark Mode */
+  --accent-l: 60%; /* Accent lightness Light Mode */
+  --accent: #d9575d;
+
+  /* Obsidian Variables */
+  --interactive-accent: #d9575d;
+  --text-accent: #d9575d;
+  --interactive-accent-rgb: rgb(209, 115, 117);
+  
+  --background-primary: #FBFBFB;
+  --background-primary-alt: #FFFFFF;
+}
+
+body {
+  /*----------------------------------------------------------------
+  FONTS
+  ----------------------------------------------------------------*/
+
+  /* Preview mode */
+  --font-default: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  --font-text: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --font-interface: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  --text: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  /* Editor mode */
+
+  --text-editor: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  /* Code */
+
+  --font-monospace: 'SF Mono', SFMono-Regular, ui-monospace,
+  'DejaVu Sans Mono', Menlo, Consolas, monospace;
+  
+  /* UI */
+
+  --font-ui: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  
+  --font-bold: 'Avenir Next Demi Bold', -apple-system;
+
+  /* Colors, sizes, weights, padding */
+
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-muted);
+
+  --strong-color: var(--pink);
+  --em-color: var(--pink);
+
+  --font-normal: 15px;
+  --font-small: 13px;
+  --font-smaller: 11px;
+  --font-smallest: 10px;
+  --editor-font-size: 1rem;
+
+  --h1: 1.5em;
+  --h2: 1.3em;
+  --h3: 1.1em;
+  --h4: 1em;
+  --h5: 1em;
+  --h6: 1em;
+
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 400;
+  --h4-weight: 300;
+  --h5-weight: 300;
+  --h6-weight: 200;
+}
+
+.markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width .cm-content {
+  max-width: 600px;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-source-view,
+.markdown-preview-view,
+.cm-s-obsidian .cm-formatting-hashtag,
+.cm-s-obsidian,
+.cm-s-obsidian span.cm-formatting-task {
+  line-height: var(--line-height);
+  font-size: var(--font-normal);
+  font-weight: var(--normal-weight);
+}
+
+.empty-state-title,
+.markdown-preview-view h1,
+.HyperMD-header,
+.cm-s-obsidian .HyperMD-header-1,
+.HyperMD-header-1
+.cm-header-1 {
+  padding-bottom: 1em;
+  font-family: 'Avenir Next Medium'; 
+}
+
+.markdown-preview-view h2,
+.HyperMD-header-2,
+.cm-header-2 {
+  padding-bottom: 0.5em;
+  display: inline-block;
+}
+
+.cm-strong {
+  font-family: var(--font-bold);
+}
+
+.cm-formatting-list,
+.list-bullet {
+  color: var(--accent) !important;
+  padding-right: 0.75em;
+}
+
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  border-right: 0px;
+}
+
+.HyperMD-list-line {
+  text-indent: -2em !important;
+}
+
+.tree-item-flair,
+.view-header-title {
+  line-height: normal;
+}
+
+.cm-s-obsidian  span:not(.cm-formatting).cm-inline-code {
+  color: #616161;
+  font-size: 90%;
+  background-color: var(--background-primary-alt);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dadada;
+  padding: 0.25em 0.5em;
+}
+
+body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
+  box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 25%) !important;
+}
