@@ -12,6 +12,7 @@
   --accent-d: 70%; /* Accent lightness Dark Mode */
   --accent-l: 60%; /* Accent lightness Light Mode */
   --accent: #d9575d;
+  --list-marker-color: #d9575d;
 
   /* Obsidian Variables */
   --interactive-accent: #d9575d;
@@ -68,11 +69,15 @@ body {
   --strong-color: var(--pink);
   --em-color: var(--pink);
 
-  --font-normal: 15px;
+  --font-normal: 14px;
+  --font-ui-medium: 14px;
   --font-small: 13px;
   --font-smaller: 11px;
   --font-smallest: 10px;
   --editor-font-size: 1rem;
+
+  --line-height-tight: 1.5;
+  /* --line-height-normal: 1.5; */
 
   --h1: 1.5em;
   --h2: 1.3em;
@@ -110,7 +115,7 @@ body {
 .cm-s-obsidian .HyperMD-header-1,
 .HyperMD-header-1
 .cm-header-1 {
-  padding-bottom: 1em;
+  padding-bottom: 1em !important;
   font-family: 'Avenir Next Medium'; 
 }
 
@@ -127,16 +132,11 @@ body {
 
 .cm-formatting-list,
 .list-bullet {
-  color: var(--accent) !important;
-  padding-right: 0.75em;
+  padding-right: 0.5em;
 }
 
 .markdown-source-view.mod-cm6 .cm-indent::before {
   border-right: 0px;
-}
-
-.HyperMD-list-line {
-  text-indent: -2em !important;
 }
 
 .tree-item-flair,
